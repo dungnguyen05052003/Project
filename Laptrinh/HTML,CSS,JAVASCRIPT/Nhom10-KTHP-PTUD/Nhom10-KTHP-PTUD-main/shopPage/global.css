@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+a:link{
+  color:Black;
+  text-decoration-line: none;
+}
+a:visited{
+  color:Black;
+  text-decoration-line: none;
+}
+a:hover{
+  color:#0C68F4;
+  
+}
+a:active{
+  color:#0C68F4;
+  text-decoration-line: underline;
+  text-decoration-color:#0C68F4;
+}

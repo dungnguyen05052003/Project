@@ -1,0 +1,6 @@
+-Code 1: 
+Binary.toText([Column to convert],BinaryEncoding.Base64)
+-Code 2:
+"dataat:image/png;base64," &[BinaryToText]
+	Hoac la:
+"data:image/jpeg;base64" &[BinaryToText]

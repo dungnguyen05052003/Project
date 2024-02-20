@@ -1,0 +1,1138 @@
+/* position: absolute;: Thiết lập vị trí của phần tử là absolute, là vị trí tuyệt đối
+top: calc(50% - 32px);: Đặt cạnh trên của phần tử cách đỉnh của phần tử cha 50% trừ đi 32 pixel. 
+
+left: calc(50% - 612px);: Tương tự như trên, đặt cạnh trái của phần tử cách cạnh trái của phần tử cha 50% trừ đi 612 pixel.
+
+width: 56px;: Thiết lập chiều rộng của phần tử là 56 pixel.
+
+height: 63px;: Thiết lập chiều cao của phần tử là 63 pixel.
+
+object-fit: cover;: - Size ảnh vừa đúng với khung hình nhưng vẫn giữ được tỷ lệ khung hình ban đầu
+*/
+.logo-icon {
+  position: absolute;
+  top: calc(50% - 32px);
+  left: calc(50% - 612px);
+  width: 56px;
+  height: 63px;
+  object-fit: cover;
+}
+/*  position: relative; : vị trí tương đối
+  font-weight: 300; : độ đậm font chữ
+*/
+.home {
+  position: relative;
+  font-weight: 300;
+}
+/* Hiển thị dạng flex
+display: flex;
+
+Hướng các items xếp thành hàng ngang
+flex-direction: row;
+
+ Căn giữa các items theo chiều dọc của container
+align-items: center; */
+.navbar,
+.navbar-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar {
+  flex-shrink: 0;
+  justify-content: center;
+  padding: 8px;
+}
+/* // Đặt vị trí tuyệt đối
+position: absolute;
+
+// Căn giữa theo chiều dọc
+top: calc(50% - 27px);
+
+// Căn giữa theo chiều ngang
+left: calc(50% - 332px);
+
+// Chiều rộng
+width: 614px;
+
+// Căn lề trái các items con
+justify-content: flex-start;
+
+// Đệm trên dưới
+padding: 8px 0;
+
+// Kích thước width bao gồm cả padding & border
+box-sizing: border-box;
+
+// Khoảng cách giữa các items con
+gap: 48px; */
+.navbar-menu {
+  position: absolute;
+  top: calc(50% - 27px);
+  left: calc(50% - 332px);
+  width: 614px;
+  justify-content: flex-start;
+  padding: 8px 0;
+  box-sizing: border-box;
+  gap: 48px;
+}
+/* // Định vị trí tương đối để căn chỉnh dễ dàng hơn   
+position: relative;
+
+// Chiều rộng  
+width: 24px;
+
+// Chiều cao
+height: 24px;
+
+// Giữ nguyên tỷ lệ khung hình khi resize ảnh
+object-fit: cover; */
+.vuesaxlinearsearch-normal-icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+/* // Chiều rộng 
+width: 40px;
+
+// Chiều cao
+height: 40px;
+
+// Đệm viền 8px xung quanh
+padding: 8px;
+
+// Tính width bao gồm cả padding và border
+box-sizing: border-box; */
+.search {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+/* // Hiển thị dưới dạng flex container
+display: flex; 
+
+// Hướng các items xếp thành hàng ngang  
+flex-direction: row;
+
+// Căn lề trên các items 
+align-items: flex-start;
+
+// Căn lề trái các items
+justify-content: flex-start; */
+.basket,
+.icons,
+.search {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+/* // Không cho phép thu hẹp khi kích thước màn hình nhỏ đi
+flex-shrink: 0;
+
+// Đệm viền 8px
+padding: 8px;  */
+.basket {
+  flex-shrink: 0;
+  padding: 8px;
+}
+/* // Căn giữa theo chiều dọc
+top: calc(50% - 28px);
+
+// Căn theo chiều ngang 
+left: calc(50% + 474px);  
+
+// Đệm trên dưới 8px 
+padding: 8px 0;
+
+// Khoảng cách giữa các items con
+gap: 8px; */
+.icons {
+  top: calc(50% - 28px);
+  left: calc(50% + 474px);
+  padding: 8px 0;
+  gap: 8px;
+}
+/* // Vị trí tuyệt đối
+position: absolute; */
+.header,
+.icons,
+.name {
+  position: absolute;
+}
+/* // Chiếm toàn bộ chiều rộng
+width: 100%;  
+
+// Căn trên
+top: 0;
+
+// Căn phải
+right: 0; 
+
+// Căn trái  
+left: 0;
+
+// Màu nền
+background-color: #fff;
+
+// Viền dưới
+border-bottom: 1px solid rgba(12, 104, 244, 0.3);  
+
+// Tính width bao gồm border và padding
+box-sizing: border-box;
+
+// Chiều cao 
+height: 100px;
+
+// Ẩn nội dung tràn
+overflow: hidden;
+
+// Kích thước font chữ
+font-size: 18px; */
+.header {
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(12, 104, 244, 0.3);
+  box-sizing: border-box;
+  height: 100px;
+  overflow: hidden;
+  font-size: 18px;
+}
+/* // Vị trí tính từ trên xuống 
+top: 240px;
+
+// Vị trí tính từ trái sang
+left: 108px; */
+.name {
+  top: 240px;
+  left: 108px;
+}
+/* Đặt vị trí tương đối 
+  position: absolute;
+Vị trí từ trên xuống
+  top: 1057px;
+Vị trí từ trái sang 
+   left: 132px;
+ */
+.desktopaccount-orders-child,
+.desktopaccount-orders-item {
+  position: absolute;
+  top: 1057px;
+  left: 132px;
+}
+/* Vị trí từ trên xuống
+  top: 1109px;
+ */
+.desktopaccount-orders-item {
+  top: 1109px;
+}
+/*  Đặt vị trí tương đối 
+  position: absolute;
+Vị trí từ trên xuống
+  top: 1161px;
+Vị trí từ trái sang 
+  left: 132px;
+   */
+.desktopaccount-orders-inner,
+.frame-div {
+  position: absolute;
+  top: 1161px;
+  left: 132px;
+}
+/* Vị trí từ trên xuống
+  top: 1213px; */
+.frame-div {
+  top: 1213px;
+}
+/* Đặt vị trí tương đối 
+  position: absolute;
+  Vị trí từ trên xuống
+  top: 1265px;
+Vị trí từ trái sang 
+    left: 132px;
+ */
+.desktopaccount-orders-child1 {
+  position: absolute;
+  top: 1265px;
+  left: 132px;
+}
+/*  Đặt vị trí tương đối 
+  position: absolute;
+  Vị trí từ trên xuống
+  top: 451px;
+Vị trí từ trái sang 
+    left: 446px;
+ */
+.desktopaccount-orders-child2 {
+  position: absolute;
+  top: 451px;
+  left: 446px;
+}
+/*  Đặt vị trí tương đối 
+  position: absolute;
+top: 224px; : Vị trí cách trên cùng của phần tử so với thẻ cha là 224px.
+left: 444px; : Vị trí cách bên trái của phần tử so với thẻ cha là 444px.
+width: 24px; : Chiều rộng của phần tử là 24px.
+height: 24px; : Chiều cao của phần tử là 24px.
+object-fit: cover; : Làm cho ảnh vừa đầy đủ chiều rộng và chiều cao của phần tử, có thể bị cắt mép ảnh.
+display: none; : Ẩn phần tử đi, không hiển thị trên trang web.*/
+.vuesaxoutlineuser-icon1 {
+  position: absolute;
+  top: 224px;
+  left: 444px;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  display: none;
+}
+
+.text {
+  position: relative;
+  line-height: 24px;
+  font-weight: 300;
+}
+.label,
+.label-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.label {
+  flex-shrink: 0;
+  align-items: flex-start;
+}
+/* position: absolute;: Đặt vị trí của phần tử là absolute, nghĩa là vị trí của nó được xác định dựa trên vị trí của container chứa nó chứ không phải vị trí ban đầu trong luồng document.
+top: 249px;: Cách trên cùng của phần tử so với container chứa là 249px.
+left: 436px;: Cách bên trái của phần tử so với container chứa là 436px.
+align-items: center;: Canh giữa các item con bên trong phần tử theo chiều dọc.
+gap: 8px;: Khoảng cách giữa các item con là 8px.
+text-align: left;: Căn lề trái đoạn text.
+color: #717171;: Màu chữ là #717171 (xám nhạt). */
+.label-icon {
+  position: absolute;
+  top: 249px;
+  left: 436px;
+  align-items: center;
+  gap: 8px;
+  text-align: left;
+  color: #717171;
+}
+.lch-s-mua,
+.theo-di-n {
+  position: relative;
+  font-weight: 500;
+}
+.theo-di-n {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #717171;
+}
+/* position: absolute;: Đặt kiểu position là absolute.
+top: 218px;: Cách 218px tính từ phía trên cùng xuống so với phần tử cha.
+left: calc(50% - 286px);: Cách bên trái bằng phép tính lấy 50% chiều rộng của phần tử cha trừ đi 286px.
+display: flex;: Thiết lập kiểu hiển thị là flexbox.
+flex-direction: column;: Các item sẽ xếp dọc theo chiều dọc.
+align-items: flex-start;: Canh các item con lên đầu dòng.
+justify-content: flex-start;: Canh các dòng lên trên cùng phần tử.
+gap: 8px;: Khoảng cách giữa các item/dòng là 8px.
+text-align: left;: Căn lề trái đoạn văn bản.
+font-size: 20px;: Size phông chữ 20px. */
+.title {
+  position: absolute;
+  top: 218px;
+  left: calc(50% - 286px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  text-align: left;
+  font-size: 20px;
+}
+/*
+position: absolute;: Đặt kiểu position là absolute.
+top: 237px; : Cách trên cùng 237px so với thẻ cha.
+left: 776px; : Cách bên trái 776px so với thẻ cha.
+width: 24px; : Chiều rộng là 24px.
+height: 24px; : Chiều cao là 24px.
+object-fit: cover; : Làm ảnh vừa đầy đủ chiều rộng và chiều cao, có thể bị cắt mép.
+display: none; : Không hiển thị phần tử.  */
+.vuesaxoutlineclose-circle-icon {
+  position: absolute;
+  top: 237px;
+  left: 776px;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  display: none;
+}
+/* flex-shrink: 0;: Ngăn không cho phần tử bị thu hẹp lại khi kích thước container nhỏ hơn.
+display: flex;: Chuyển phần tử sang kiểu hiển thị flex.
+flex-direction: row;: Các item con sẽ được xếp theo hàng ngang.
+align-items: center;: Căn giữa các item con theo chiều dọc của container.
+justify-content: center;: Căn giữa các item con theo chiều ngang của container.
+padding: 4px 0;: Đệm trong của phần tử, cụ thể là 4px trên/dưới và 0 trái/phải. */
+.breadcrumbs-elements {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 0;
+}
+.vuesaxoutlinearrow-down-icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  display: none;
+}
+.breadcrumbs-elements1 {
+  flex-shrink: 0;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 0;
+}
+.breadcrumb,
+.breadcrumbs-elements3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.breadcrumbs-elements3 {
+  border-bottom: 1px solid #0c68f4;
+  flex-shrink: 0;
+  justify-content: center;
+  padding: 4px 0;
+  color: #0c68f4;
+}
+.breadcrumb {
+  position: absolute;
+  top: 132px;
+  left: calc(50% - 610px);
+  justify-content: flex-start;
+  font-size: 18px;
+  color: #717171;
+}
+.frame-child {
+  position: relative;
+  border-radius: 39px;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.account-side-menu,
+.frame-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+.account-side-menu {
+  height: 64px;
+  justify-content: flex-start;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+.frame-parent {
+  justify-content: center;
+  padding: 0 8px;
+}
+.account-side-menu1 {
+  padding: 20px 24px;
+}
+.account-side-menu1,
+.account-side-menu3,
+.account-side-menu9 {
+  height: 76px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  gap: 16px;
+}
+.account-side-menu3 {
+  border-left: 2px solid #0c68f4;
+  padding: 24px;
+  color: #0c68f4;
+}
+.account-side-menu9 {
+  padding: 20px 24px;
+  color: #c91433;
+}
+.line-div,
+.side-menu {
+  position: absolute;
+  box-sizing: border-box;
+}
+/* top: 194px;: Cách 194px từ trên xuống so với thẻ cha.
+left: calc(50% - 612px);: Cách trái bằng phép tính lấy 50% chiều rộng của thẻ cha trừ đi 612px.
+border-radius: 8px;: Bo góc 8px.
+background-color: #f9f9f9;: Màu nền #f9f9f9.
+border: 1px solid #f6f6f6;: Viền 1px màu #f6f6f6.
+width: 288px;: Chiều rộng 288px.
+display: flex; : Hiển thị dạng flexbox.
+flex-direction: column;: Các item sẽ xếp chồng lên nhau theo chiều dọc.
+align-items: flex-start;: Căn lề trái các item.
+justify-content: center;: Căn giữa các item theo chiều ngang.
+padding: 8px 0 0;: Đệm trong 8px trên, 0 bên trái/phải.
+text-align: left: Căn lề trái đoạn văn bản.
+font-size: 20px: Size phông chữ 20px. */
+.side-menu {
+  top: 194px;
+  left: calc(50% - 612px);
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  border: 1px solid #f6f6f6;
+  width: 288px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 8px 0 0;
+  text-align: left;
+  font-size: 20px;
+}
+.line-div {
+  top: 344.5px;
+  left: 419.5px;
+  border-top: 3px solid #ededed;
+  width: 914px;
+  height: 3px;
+}
+.current {
+  position: relative;
+  line-height: 28px;
+  font-weight: 300;
+}
+/* border-radius: 32px; : Bo tròn góc với bán kính 32px.
+background-color: #f9f9f9; : Màu nền là #f9f9f9.
+height: 20px; : Chiều cao cố định 20px.
+flex-direction: column; : Các item sẽ xếp chồng lên nhau theo chiều dọc.
+align-items: center; : Căn giữa các item theo chiều ngang trong container.
+justify-content: center; : Căn giữa các item theo chiều dọc trong container.
+min-width: 20px; : Chiều rộng tối thiểu là 20px.
+min-height: 20px; : Chiều cao tối thiểu là 20px.
+font-size: 16px; : Size chữ là 16px. */
+.badge {
+  border-radius: 32px;
+  background-color: #f9f9f9;
+  height: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  min-height: 20px;
+  font-size: 16px;
+}
+.badge,
+.normal,
+.sub-orders {
+  flex-shrink: 0;
+  display: flex;
+}
+/* flex-direction: row;: Các item sẽ được xếp theo hàng ngang.
+align-items: center;: Căn giữa các item theo chiều dọc.
+justify-content: center;: Căn giữa các item theo chiều ngang.
+padding: 0 0 4px;: Đệm trong là 0 ở trên, 0 ở trái/phải, 4px ở dưới.
+gap: 8px;: Khoảng cách giữa các item là 8px. */
+.normal {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 4px;
+  gap: 8px;
+}
+.sub-orders {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.badge1,
+.normal1 {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* border-radius: 32px; : Bo tròn góc với bán kính 32px.
+background-color: #0c68f4; : Màu nền là #0c68f4 (xanh da trời).
+height: 20px; : Chiều cao cố định là 20px.
+flex-direction: column; : Các item sẽ xếp chồng lên nhau theo chiều dọc.
+min-width: 20px; : Chiều rộng tối thiểu là 20px.
+min-height: 20px; : Chiều cao tối thiểu là 20px.
+font-size: 16px; : Size chữ là 16px.
+color: #fff; : Màu chữ trắng. */
+.badge1 {
+  border-radius: 32px;
+  background-color: #0c68f4;
+  height: 20px;
+  flex-direction: column;
+  min-width: 20px;
+  min-height: 20px;
+  font-size: 16px;
+  color: #fff;
+}
+.normal1 {
+  border-bottom: 3px solid #0c68f4;
+  flex-direction: row;
+  padding: 0 0 4px;
+  gap: 8px;
+}
+.sub-orders1,
+.titles {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sub-orders1 {
+  flex-shrink: 0;
+  flex-direction: column;
+  color: #0c68f4;
+}
+/* position: absolute;: Đặt vị trí là absolute, 
+top: 314px;: Cách 314px tính từ trên xuống so với phần tử cha.
+left: calc(50% - 288px);: Cách trái bằng phép tính lấy 50% chiều rộng của phần tử cha trừ đi 288px.
+flex-direction: row;: Các item sẽ được xếp theo hàng ngang.
+gap: 32px;: Khoảng cách giữa các item là 32px.
+font-size: 20px;: Size chữ là 20px.
+color: #717171;: Màu chữ là #717171 (xám nhạt) */
+.titles {
+  position: absolute;
+  top: 314px;
+  left: calc(50% - 288px);
+  flex-direction: row;
+  gap: 32px;
+  font-size: 20px;
+  color: #717171;
+}
+.div4,
+.order-code {
+  align-self: stretch;
+  position: relative;
+  font-weight: 500;
+}
+.div4 {
+  font-size: 18px;
+  font-weight: 300;
+}
+.order-code-parent {
+  gap: 24px;
+}
+.order-code-parent,
+.sent-to-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+/* align-self: stretch;: Kéo phần tử để chiếm trọn chiều cao của container.
+border-radius: 4px;: Bo góc 4px cho phần tử.
+background-color: #f6f6f6;: Màu nền #f6f6f6.
+display: flex;: Chuyển sang kiểu trình bày flexbox.
+flex-direction: row;: Các item sẽ nằm theo hàng ngang.
+align-items: flex-start;: Căn chỉnh các item lên đầu theo chiều dọc.
+justify-content: space-between;: Các item sẽ cách đều nhau theo chiều ngang giữa 2 phía container.
+padding: 16px;: Đệm 16px xung quanh bên trong.
+z-index: 0;: Chỉ định thứ tự hiển thị layer, ở đây là 0 - mặc định. */
+.info {
+  align-self: stretch;
+  border-radius: 4px;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 16px;
+  z-index: 0;
+}
+/* lex: 1; : Phần tử sẽ tự động chiếm tối đa không gian còn trống của container.
+position: relative; : Đặt vị trí tương đối để các phần tử con có thể đặt absolute dựa trên nó.
+border-radius: 4px; : Bo góc 4px cho phần tử.
+max-width: 100%; : Cho phép chiều rộng tối đa là 100% chiều rộng của phần tử cha.
+overflow: hidden; : Ẩn bớt nội dung tràn ra ngoài.
+height: 116px; : Chiều cao cố định 116px.
+object-fit: cover; : Làm cho nội dung bên trong phần tử luôn “cover” hết chiều cao và chiều rộng. */
+.image-child {
+  flex: 1;
+  position: relative;
+  border-radius: 4px;
+  max-width: 100%;
+  overflow: hidden;
+  height: 116px;
+  object-fit: cover;
+}
+/* position: absolute;: Đặt vị trí là absolute, tức là vị trí tuyệt  đối dựa trên phần tử cha.
+top: calc(50% - 14px);: Cách trên 50% chiều cao của phần tử cha trừ đi 14px. Sử dụng calc() để tính toán.
+left: calc(50% - 15.29px);: Cách trái 50% chiều rộng của phần tử cha trừ đi 15.29px.
+font-weight: 500;: Độ đậm của font là 500 */
+.div8 {
+  position: absolute;
+  top: calc(50% - 14px);
+  left: calc(50% - 15.29px);
+  font-weight: 500;
+}
+/* flex: 1; : Phần tử sẽ chiếm tối đa không gian còn trống của container.
+position: relative; : Đặt vị trí tương đối để các phần tử con có thể đặt absolute dựa trên nó.
+border-radius: 4px; : Bo góc 4px cho phần tử.
+border: 1px solid #f6f6f6; : Viền 1px màu #f6f6f6.
+box-sizing: border-box; : Kích thước bao gồm cả padding và border.
+height: 116px; : Chiều cao cố định 116px.
+overflow: hidden; : Ẩn bớt nội dung tràn ra ngoài. */
+.wrapper {
+  flex: 1;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #f6f6f6;
+  box-sizing: border-box;
+  height: 116px;
+  overflow: hidden;
+}
+.image,
+.order-card,
+.send-to {
+  display: flex;
+  align-items: center;
+}
+/* // Chiếm full chiều cao
+align-self: stretch; 
+
+// Màu nền
+background-color: #fff;  
+
+// Hướng flex ngang  
+flex-direction: row;
+
+// Căn giữa các item
+justify-content: center;
+
+// Padding top bottom
+padding: 2px 0;  
+
+// Khoảng cách các item 
+gap: 20px;
+
+// Nằm trên cùng
+z-index: 1; 
+
+// Cỡ chữ
+font-size: 24px;
+
+// Màu chữ  
+color: #444; */
+.image {
+  align-self: stretch;
+  background-color: #fff;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2px 0;
+  gap: 20px;
+  z-index: 1;
+  font-size: 24px;
+  color: #444;
+}
+.order-card,
+.send-to {
+  position: absolute;
+}
+/* // Ghi đè margin về 0
+margin: 0 !important;  
+
+// Vị trí từ trên xuống  
+top: 74px;
+
+// Vị trí từ phải sang
+right: 29.75px;
+
+// Hướng flex ngang
+flex-direction: row; 
+
+// Canh lề trái các item
+justify-content: flex-start;  
+
+// Khoảng cách giữa các item
+gap: 12px; 
+
+// Ưu tiên hiển thị trên cùng
+z-index: 2;
+
+// Cỡ chữ 
+font-size: 18px;
+
+// Màu chữ
+color: #000; */
+.send-to {
+  margin: 0 !important;
+  top: 74px;
+  right: 29.75px;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 12px;
+  z-index: 2;
+  font-size: 18px;
+  color: #000;
+}
+/* // Vị trí
+top: 370px; 
+left: calc(50% - 300px); 
+
+// Bo góc
+border-radius: 8px;
+
+// Màu nền
+background-color: #fff;   
+
+// Kích thước
+width: 912px;
+height: 275px;  
+
+// Flexbox layout
+flex-direction: column;  
+justify-content: center;
+
+// Padding 
+padding: 16px;
+
+// Tính width bao gồm padding  
+box-sizing: border-box;  */
+.order-card {
+  top: 370px;
+  left: calc(50% - 300px);
+  border-radius: 8px;
+  background-color: #fff;
+  width: 912px;
+  height: 275px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+  box-sizing: border-box;
+  gap: 24px;
+}
+/* // Đặt vị trí tương đối
+position: relative;
+
+// Bo góc 4px
+border-radius: 4px;  
+
+// Chiều cao cố định
+height: 116px;
+
+// Ẩn nội dung tràn ra ngoài  
+overflow: hidden;
+
+// Giữ nguyên tỷ lệ khung hình khi resize ảnh 
+object-fit: cover; */
+.image-child3,
+.image-child4 {
+  position: relative;
+  border-radius: 4px;
+  height: 116px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.image-child3 {
+  flex: 1;
+  max-width: 100%;
+  display: none;
+}
+.image-child4 {
+  width: 104.71px;
+  flex-shrink: 0;
+}
+.div13 {
+  position: absolute;
+  top: calc(50% - 14px);
+  left: calc(50% - 15.36px);
+  font-weight: 500;
+  display: none;
+}
+/* // Chiếm kích thước còn lại của container  
+flex: 1;
+
+// Vị trí tương đối  
+position: relative;
+
+// Bo góc
+border-radius: 4px;  
+
+// Viền
+border: 1px solid #f6f6f6;
+
+// Tính width bao gồm border và padding  
+box-sizing: border-box;
+
+// Chiều cao cố định  
+height: 116px;
+
+// Cắt nội dung tràn
+overflow: hidden;   
+
+// Ẩn đi  
+display: none; */
+.container {
+  flex: 1;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #f6f6f6;
+  box-sizing: border-box;
+  height: 116px;
+  overflow: hidden;
+  display: none;
+}
+/* // Hiển thị dạng flex container  
+display: flex;   
+
+// Hướng main axis ngang (row)   
+flex-direction: row; 
+
+// Căn giữa các item theo chiều dọc  
+align-items: center;   
+
+// Căn lề trái các item theo chiều ngang
+justify-content: flex-start; */
+.image1,
+.jimmy-smith1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.image1 {
+  align-self: stretch;
+  background-color: #fff;
+  padding: 2px 0;
+  gap: 20px;
+  z-index: 1;
+  font-size: 24px;
+  color: #444;
+}
+.jimmy-smith1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  gap: 12px;
+}
+
+.address-child {
+  position: absolute;
+  top: -7px;
+  left: 62px;
+  width: 24px;
+  height: 13px;
+  object-fit: cover;
+}
+/* position: absolute;: Đặt vị trí tuyệt đối.
+top: 6px;: Cách top 6px.
+left: 4px;: Cách left 4px.
+line-height: 24px;: Chiều cao dòng là 24px.
+font-weight: 300;: Độ mỏng của phông chữ là 300.
+display: -webkit-inline-box;: Hiển thị dạng inline box.
+overflow: hidden;: Ẩn các nội dung tràn.
+text-overflow: ellipsis;: Thêm dấu ... khi văn bản bị cắt.
+-webkit-line-clamp: 3;: Giới hạn 3 dòng hiển thị.
+-webkit-box-orient: vertical;: Xếp dọc các dòng.
+width: 140px;: Chiều rộng tối đa là 140px. */
+.albuquerquenew-york {
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  line-height: 24px;
+  font-weight: 300;
+  display: -webkit-inline-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  width: 140px;
+}
+/* // Vị trí tuyệt đối  
+position: absolute; 
+
+// Vị trí từ trên xuống
+top: 32px;  
+
+// Vị trí từ trái sang  
+left: 0;
+
+// Bo góc 
+border-radius: 8px;   
+
+// Màu nền
+background-color: #fff;  
+
+// Viền
+border: 1px solid #717171;  
+
+// Tính width bao gồm border
+box-sizing: border-box;
+
+// Width, height cố định 
+width: 144px;
+height: 62px;
+
+// Cỡ chữ
+font-size: 16px; 
+
+// Màu chữ
+color: #717171; */
+.address {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #717171;
+  box-sizing: border-box;
+  width: 144px;
+  height: 62px;
+  font-size: 16px;
+  color: #717171;
+}
+/* // Vị trí tuyệt đối
+position: absolute;   
+
+// Vị trí từ trên xuống   
+top: 25px;
+
+// Vị trí từ trái sang
+left: 66px;
+
+// Chiều rộng 
+width: 16px;  
+
+// Chiều cao
+height: 7px;  
+
+// Giữ nguyên tỷ lệ khi resize icon
+object-fit: cover; */
+.send-to-child {
+  position: absolute;
+  top: 25px;
+  left: 66px;
+  width: 16px;
+  height: 7px;
+  object-fit: cover;
+}
+/* // Vị trí tuyệt đối
+position: absolute;  
+
+// Ghi đè margin
+margin: 0 !important;
+
+// Vị trí từ trên xuống  
+top: 74px;
+
+// Vị trí từ phải sang
+right: 29.75px;
+
+// Chiều rộng 
+width: 144px;  
+
+// Chiều cao 
+height: 24px;
+
+// Hiển thị trên cùng  
+z-index: 2;
+
+// Cỡ chữ
+font-size: 18px; */
+.send-to1 {
+  position: absolute;
+  margin: 0 !important;
+  top: 74px;
+  right: 29.75px;
+  width: 144px;
+  height: 24px;
+  z-index: 2;
+  font-size: 18px;
+}
+/* // Vị trí tuyệt đối
+position: absolute;
+
+// Vị trí từ trên xuống
+top: 669px; 
+
+// Căn giữa theo chiều ngang  
+left: calc(50% - 300px);  
+
+// Bo góc 
+border-radius: 8px;
+
+// Màu nền
+background-color: #fff;
+
+// Width & height 
+width: 912px;
+height: 275px;
+
+// Sử dụng Flexbox
+display: flex; 
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+// Padding 
+padding: 16px;  
+
+// Tính width bao gồm padding
+box-sizing: border-box;
+
+// Khoảng cách các items
+gap: 24px; */
+.order-card1 {
+  position: absolute;
+  top: 669px;
+  left: calc(50% - 300px);
+  border-radius: 8px;
+  background-color: #fff;
+  width: 912px;
+  height: 275px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  box-sizing: border-box;
+  gap: 24px;
+}
+/* position: relative;: Đặt vị trí của phần tử là relative - nghĩa là vị trí của nó được xác định dựa trên vị trí ban đầu trong luồng document chứ không phải theo vị trí tuyệt đối.
+background-color: #fff;: Set màu nền của phần tử thành màu trắng (#fff).
+width: 100%;: Độ rộng của phần tử bằng 100% chiều rộng của phần tử chứa nó.
+height: 1008px;: Chiều cao của phần tử là 1008px.
+overflow: hidden;: Ẩn bất kỳ nội dung nào tràn ra ngoài phần tử.
+text-align: center;: Căn chỉnh text ở giữa.
+font-size: 16px;: Size phông chữ là 16px.
+color: #0c0c0c;: Màu chữ là #0c0c0c (xám đậm).
+font-family: Inter;: Font chữ là Inter. */
+.desktopaccount-orders {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 1008px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 16px;
+  color: #0c0c0c;
+  font-family: Inter;
+}
+.image-child4:hover {
+  transform: scale(1.5); /* Tăng kích thước lên 1.2 lần */ 
+}
+
+.image-child:hover {
+  transform: scale(1.5); /* Tăng kích thước lên 1.2 lần */ 
+}

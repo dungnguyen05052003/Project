@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+a:link{
+  color:Black;
+  text-decoration-line: none;
+}
+a:visited{
+  color:Black;
+}
+a:hover{
+  color:#0C68F4;
+  
+}
+a:active{
+  color:#0C68F4;
+  text-decoration-line: underline;
+  text-decoration-color:#0C68F4;
+}
+
+:root {
+  /* fonts */
+  --web-h5: Inter;
+
+  /* font sizes */
+  --web-body-lg-size: 18px;
+  --web-h5-size: 20px;
+  --web-body-md-size: 16px;
+
+  /* Colors */
+  --white: #fff;
+  --primary-primary-300: #0c68f4;
+  --gradient-linear-stroke-bottom: rgba(12, 104, 244, 0.3);
+  --black: #0c0c0c;
+  --state-error: #c91433;
+  --primary-primary-500: #063a88;
+  --neutral-gray-717171: #717171;
+
+  /* Gaps */
+  --gap-5xs: 8px;
+  --gap-29xl: 48px;
+  --gap-base: 16px;
+  --gap-5xl: 24px;
+
+  /* Paddings */
+  --padding-5xs: 8px;
+  --padding-xl: 20px;
+  --padding-5xl: 24px;
+  --padding-base: 16px;
+  --padding-9xs: 4px;
+
+  /* Border radiuses */
+  --br-5xs: 8px;
+
+  /* Effects */
+  --shadow-2: -2px 2px 20px -1px rgba(113, 113, 113, 0.2);
+}
